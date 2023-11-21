@@ -29,9 +29,9 @@ const App = () => {
         let res: Response;
 
         if (coords) {
-            res = await fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${coords?.latitude}&lon=${coords?.longitude}&units=metric&appid=107abccf98057eb3e3aaabf6e48599af`);
+            res = await fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${coords?.latitude}&lon=${coords?.longitude}&units=metric&appid=${import.meta.env.VITE_WEATHER_API}`);
         } else {
-            res = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=Moscow&units=metric&appid=107abccf98057eb3e3aaabf6e48599af`);
+            res = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=Moscow&units=metric&appid=${import.meta.env.VITE_WEATHER_API}`);
         }
 
         const data = await res.json();
