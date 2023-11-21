@@ -2,8 +2,8 @@ import "./Card.scss";
 
 type CardProps = {
     title: string,
-    value: string,
-    postfix: string,
+    value: number,
+    postfix?: string,
     description: string
 }
 
