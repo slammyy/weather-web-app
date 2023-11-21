@@ -1,6 +1,13 @@
 import "./Card.scss";
 
-const Card = (props) => {
+type CardProps = {
+    title: string,
+    value: string,
+    postfix: string,
+    description: string
+}
+
+const Card = (props: CardProps) => {
     return (
         <div className="card-container">
             <header>

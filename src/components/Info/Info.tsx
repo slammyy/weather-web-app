@@ -1,6 +1,12 @@
 import "./Info.scss";
 
-const Info = (props) => {
+type InfoProps = {
+    title: string,
+    value: number,
+    description: string
+};
+
+const Info = (props: InfoProps) => {
     return (
         <div className="info-container">
             <h2 className="title">{props.title}</h2>
