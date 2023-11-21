@@ -1,0 +1,16 @@
+@use '../../theme.scss';
+
+.map-container {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    display: flex;
+
+    border: 2px solid theme.$border-cold;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px rgba($color: theme.$black-700, $alpha: 0.1);
+    background: rgba($color: white, $alpha: 0.1);
+    @media screen and (max-width: 900px) {
+        margin-bottom: 5vh;
+    }
+}

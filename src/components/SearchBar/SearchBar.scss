@@ -1,0 +1,21 @@
+@use '../../theme';
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap');
+
+input {
+    caret-shape: block;
+    width: 8em;
+    padding: 0.2em 1.5em 0.2em 1.5em;
+    background: none;
+    background-image: url('../../assets/search.svg');
+    background-size: 0.8em;
+    background-repeat: no-repeat;
+    background-position: 25px center;
+    border: 2px solid theme.$border-cold;
+    border-radius: 20px;
+    font-size: 3.75em;
+    color: theme.$black-700;
+    outline: none;
+    &::placeholder {
+        opacity: 20%;
+    }
+}

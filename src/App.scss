@@ -1,5 +1,37 @@
-.app {
-    h1 {
-        color: yellow;
+.page-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @media screen and (max-width: 700px) {
+        flex-direction: column;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 22vw);
+        grid-template-rows: repeat(2, 22vw);
+        gap: 20px;
+
+        @media screen and (max-width: 700px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .map-container {
+            grid-column: 2/4;
+            grid-row: 2;
+        }
+    }
+
+    .info {
+        position: absolute;
+        left: 2vw;
+        bottom: 2vh;
+
+        @media screen and (max-width: 900px) {
+            display: none;
+        }
     }
 }
